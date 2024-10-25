@@ -1,0 +1,1 @@
+%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;C:\Users\maxba\AppData\Local\Programs\Python\Python37-32\;C:\Users\maxba\AppData\Local\Programs\Python\Python37-32\Scripts\;%USERPROFILE%\.dotnet\tools;C:\Users\maxba\AppData\Roaming\npm;C:\Users\maxba\AppData\Local\Programs\Microsoft VS Code\bin;C:\msys64\usr\bin;

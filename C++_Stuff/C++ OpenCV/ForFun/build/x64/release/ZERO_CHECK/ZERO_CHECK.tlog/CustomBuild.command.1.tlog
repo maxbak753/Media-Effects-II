@@ -1,0 +1,10 @@
+^C:\USERS\MAXBA\DOCUMENTS\C++_STUFF\C++ OPENCV\FORFUN\BUILD\CMAKEFILES\FD6B8E865D3EB295A845DF79FF2470DA\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/maxba/Documents/C++_Stuff/C++ OpenCV/ForFun" "-BC:/Users/maxba/Documents/C++_Stuff/C++ OpenCV/ForFun/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/maxba/Documents/C++_Stuff/C++ OpenCV/ForFun/build/fun1.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

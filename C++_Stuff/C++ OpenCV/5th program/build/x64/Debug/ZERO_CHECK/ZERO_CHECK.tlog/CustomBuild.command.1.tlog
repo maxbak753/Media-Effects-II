@@ -1,0 +1,10 @@
+^C:\USERS\MAXBA\DOCUMENTS\C++_STUFF\C++ OPENCV\5TH PROGRAM\BUILD\CMAKEFILES\D54B784E76A9D45F44BF595DBA49A89B\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/maxba/Documents/C++_Stuff/C++ OpenCV/5th program" "-BC:/Users/maxba/Documents/C++_Stuff/C++ OpenCV/5th program/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/maxba/Documents/C++_Stuff/C++ OpenCV/5th program/build/opencv_test.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

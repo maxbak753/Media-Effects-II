@@ -1,0 +1,17 @@
+-------------------------------
+COMPILING COMMAND LINE COMMANDS
+-------------------------------
+
+COMPILE:
+g++ mainCppFileName.cpp -o ExecutableFileName
+g++ mainCppFileName.cpp otherCppFileName.cpp -o executableFileName
+
+RUN EXECUTABLE FILE:
+executableFileName       <--- in command prompt
+.\executableFileName     <--- in PowerShell
+
+ENTER FOLDER from current directory:
+cd folderName
+
+EXIT FOLDER from current directory:
+cd ..

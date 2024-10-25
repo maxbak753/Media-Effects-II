@@ -1,0 +1,3 @@
+C:/Users/maxba/Documents/C++_Stuff/C++ OpenCV/3rd program/build/CMakeFiles/opencv_test.dir
+C:/Users/maxba/Documents/C++_Stuff/C++ OpenCV/3rd program/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/maxba/Documents/C++_Stuff/C++ OpenCV/3rd program/build/CMakeFiles/ZERO_CHECK.dir

@@ -1,0 +1,23 @@
+------------------------------
+Simple OpenCV Program Creation
+PowerShell Commands
+------------------------------
+
+CONFIGURE STEP
+mkdir build
+cmake -B .\build\
+
+BUILD IN DEBUG <-- sometimes causes "info" warnings/errors to show up (unlike Release builds)
+cmake --build .\build\
+RUN IN DEBUG
+.\build\Debug\OpenCVExample.exe
+
+BUILD IN RELEASE
+cmake --build .\build\ --config release
+RUN IN RELEASE
+.\build\Release\OpenCVExample.exe
+
+MODIFY PROGRAM & REBUILD
+cmake --build .\build\
+RUN MODIFIED PROGRAM
+.\build\Debug\OpenCVExample.exe

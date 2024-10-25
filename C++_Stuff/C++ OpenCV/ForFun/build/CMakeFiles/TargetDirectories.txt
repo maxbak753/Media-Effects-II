@@ -1,0 +1,3 @@
+C:/Users/maxba/Documents/C++_Stuff/C++ OpenCV/ForFun/build/CMakeFiles/fun1.dir
+C:/Users/maxba/Documents/C++_Stuff/C++ OpenCV/ForFun/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/maxba/Documents/C++_Stuff/C++ OpenCV/ForFun/build/CMakeFiles/ZERO_CHECK.dir
