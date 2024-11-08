@@ -1,0 +1,10 @@
+^C:\USERS\MAXBA\DOCUMENTS\C++_STUFF\PARTICLE_SIMULATOR\PARTICLES_1\BUILD\CMAKEFILES\DF54C08CBA544A22910AF1F2F3456AA7\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/maxba/Documents/C++_Stuff/Particle_Simulator/Particles_1 -BC:/Users/maxba/Documents/C++_Stuff/Particle_Simulator/Particles_1/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/maxba/Documents/C++_Stuff/Particle_Simulator/Particles_1/build/particles_1.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
