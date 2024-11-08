@@ -1,0 +1,4 @@
+C:\Users\maxba\Documents\C++_Stuff\C++ OpenCV\ForFun\vcpkg.json: error: $.version: mismatched type: expected a relaxed version string
+C:\Users\maxba\Documents\C++_Stuff\C++ OpenCV\ForFun\vcpkg.json: error: $ (a manifest): error: `` is not a valid relaxed version (semver with arbitrary numeric element count).
+note: Extended documentation available at 'https://learn.microsoft.com/vcpkg/users/manifests?WT.mc_id=vcpkg_inproduct_cli'.
+

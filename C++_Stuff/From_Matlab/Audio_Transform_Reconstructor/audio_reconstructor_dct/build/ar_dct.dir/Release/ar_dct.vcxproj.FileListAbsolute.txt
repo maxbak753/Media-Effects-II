@@ -1,0 +1,10 @@
+C:\Users\maxba\Documents\C++_Stuff\From_Matlab\Audio_Transform_Reconstructor\audio_reconstructor_dct\build\Release\fftw3.dll
+C:\Users\maxba\Documents\C++_Stuff\From_Matlab\Audio_Transform_Reconstructor\audio_reconstructor_dct\build\Release\sndfile.dll
+C:\Users\maxba\Documents\C++_Stuff\From_Matlab\Audio_Transform_Reconstructor\audio_reconstructor_dct\build\Release\vorbisenc.dll
+C:\Users\maxba\Documents\C++_Stuff\From_Matlab\Audio_Transform_Reconstructor\audio_reconstructor_dct\build\Release\vorbis.dll
+C:\Users\maxba\Documents\C++_Stuff\From_Matlab\Audio_Transform_Reconstructor\audio_reconstructor_dct\build\Release\ogg.dll
+C:\Users\maxba\Documents\C++_Stuff\From_Matlab\Audio_Transform_Reconstructor\audio_reconstructor_dct\build\Release\FLAC.dll
+C:\Users\maxba\Documents\C++_Stuff\From_Matlab\Audio_Transform_Reconstructor\audio_reconstructor_dct\build\Release\opus.dll
+C:\Users\maxba\Documents\C++_Stuff\From_Matlab\Audio_Transform_Reconstructor\audio_reconstructor_dct\build\Release\mpg123.dll
+C:\Users\maxba\Documents\C++_Stuff\From_Matlab\Audio_Transform_Reconstructor\audio_reconstructor_dct\build\Release\libmp3lame.DLL
+C:\Users\maxba\Documents\C++_Stuff\From_Matlab\Audio_Transform_Reconstructor\audio_reconstructor_dct\build\ar_dct.dir\Release\ar_dct.vcxproj.CopyComplete

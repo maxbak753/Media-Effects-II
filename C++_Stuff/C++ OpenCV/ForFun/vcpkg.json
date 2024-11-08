@@ -1,0 +1,7 @@
+{
+    "version": 0,
+    "dependencies": [
+      "matplotplusplus",
+      "opencv"
+    ]
+}

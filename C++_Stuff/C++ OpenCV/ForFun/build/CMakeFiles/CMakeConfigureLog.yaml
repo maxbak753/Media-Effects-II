@@ -26,19 +26,30 @@ events:
       Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
       Copyright (C) Microsoft Corporation. All rights reserved.
       
-      Build started 10/10/2024 5:05:41 PM.
+      Build started 11/3/2024 1:33:17 AM.
       Project "C:\\Users\\maxba\\Documents\\C++_Stuff\\C++ OpenCV\\ForFun\\build\\CMakeFiles\\3.30.4\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
       PrepareForBuild:
         Creating directory "Debug\\".
         Creating directory "Debug\\CompilerIdC.tlog\\".
       InitializeBuildStatus:
         Creating "Debug\\CompilerIdC.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+      VcpkgTripletSelection:
+        Using triplet "x64-windows" from "C:\\vcpkg\\installed\\x64-windows\\"
+        Using normalized configuration "Release"
+      VcpkgCheckManifestRoot:
+        The vcpkg manifest was disabled, but we found a manifest file in C:\\Users\\maxba\\Documents\\C++_Stuff\\C++ OpenCV\\ForFun\\. You may want to enable vcpkg manifests in your properties page or pass /p:VcpkgEnableManifest=true to the msbuild invocation.
       ClCompile:
-        C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc142.pdb" /external:W0 /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
+        C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc142.pdb" /external:W0 /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
         CMakeCCompilerId.c
       Link:
-        C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X64 Debug\\CMakeCCompilerId.obj
+        C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"C:\\vcpkg\\installed\\x64-windows\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib "C:\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X64 Debug\\CMakeCCompilerId.obj
         CompilerIdC.vcxproj -> C:\\Users\\maxba\\Documents\\C++_Stuff\\C++ OpenCV\\ForFun\\build\\CMakeFiles\\3.30.4\\CompilerIdC\\CompilerIdC.exe
+      AppLocalFromInstalled:
+        pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\maxba\\Documents\\C++_Stuff\\C++ OpenCV\\ForFun\\build\\CMakeFiles\\3.30.4\\CompilerIdC\\CompilerIdC.exe" "C:\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdC.tlog\\CompilerIdC.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+        'pwsh.exe' is not recognized as an internal or external command,
+        operable program or batch file.
+        The command "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\maxba\\Documents\\C++_Stuff\\C++ OpenCV\\ForFun\\build\\CMakeFiles\\3.30.4\\CompilerIdC\\CompilerIdC.exe" "C:\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdC.tlog\\CompilerIdC.write.1u.tlog" "Debug\\vcpkg.applocal.log"" exited with code 9009.
+        "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\maxba\\Documents\\C++_Stuff\\C++ OpenCV\\ForFun\\build\\CMakeFiles\\3.30.4\\CompilerIdC\\CompilerIdC.exe" "C:\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdC.tlog\\CompilerIdC.write.1u.tlog" "Debug\\vcpkg.applocal.log"
       PostBuildEvent:
         for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
         :VCEnd
@@ -52,7 +63,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:01.05
+      Time Elapsed 00:00:02.72
       
       
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -80,19 +91,30 @@ events:
       Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
       Copyright (C) Microsoft Corporation. All rights reserved.
       
-      Build started 10/10/2024 5:05:42 PM.
+      Build started 11/3/2024 1:33:20 AM.
       Project "C:\\Users\\maxba\\Documents\\C++_Stuff\\C++ OpenCV\\ForFun\\build\\CMakeFiles\\3.30.4\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
       PrepareForBuild:
         Creating directory "Debug\\".
         Creating directory "Debug\\CompilerIdCXX.tlog\\".
       InitializeBuildStatus:
         Creating "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+      VcpkgTripletSelection:
+        Using triplet "x64-windows" from "C:\\vcpkg\\installed\\x64-windows\\"
+        Using normalized configuration "Release"
+      VcpkgCheckManifestRoot:
+        The vcpkg manifest was disabled, but we found a manifest file in C:\\Users\\maxba\\Documents\\C++_Stuff\\C++ OpenCV\\ForFun\\. You may want to enable vcpkg manifests in your properties page or pass /p:VcpkgEnableManifest=true to the msbuild invocation.
       ClCompile:
-        C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc142.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+        C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc142.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
         CMakeCXXCompilerId.cpp
       Link:
-        C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
+        C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"C:\\vcpkg\\installed\\x64-windows\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib "C:\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
         CompilerIdCXX.vcxproj -> C:\\Users\\maxba\\Documents\\C++_Stuff\\C++ OpenCV\\ForFun\\build\\CMakeFiles\\3.30.4\\CompilerIdCXX\\CompilerIdCXX.exe
+      AppLocalFromInstalled:
+        pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\maxba\\Documents\\C++_Stuff\\C++ OpenCV\\ForFun\\build\\CMakeFiles\\3.30.4\\CompilerIdCXX\\CompilerIdCXX.exe" "C:\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+        'pwsh.exe' is not recognized as an internal or external command,
+        operable program or batch file.
+        The command "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\maxba\\Documents\\C++_Stuff\\C++ OpenCV\\ForFun\\build\\CMakeFiles\\3.30.4\\CompilerIdCXX\\CompilerIdCXX.exe" "C:\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.write.1u.tlog" "Debug\\vcpkg.applocal.log"" exited with code 9009.
+        "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\maxba\\Documents\\C++_Stuff\\C++ OpenCV\\ForFun\\build\\CMakeFiles\\3.30.4\\CompilerIdCXX\\CompilerIdCXX.exe" "C:\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.write.1u.tlog" "Debug\\vcpkg.applocal.log"
       PostBuildEvent:
         for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
         :VCEnd
@@ -106,7 +128,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:00.81
+      Time Elapsed 00:00:02.24
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -125,8 +147,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/maxba/Documents/C++_Stuff/C++ OpenCV/ForFun/build/CMakeFiles/CMakeScratch/TryCompile-26zlpd"
-      binary: "C:/Users/maxba/Documents/C++_Stuff/C++ OpenCV/ForFun/build/CMakeFiles/CMakeScratch/TryCompile-26zlpd"
+      source: "C:/Users/maxba/Documents/C++_Stuff/C++ OpenCV/ForFun/build/CMakeFiles/CMakeScratch/TryCompile-rhyhma"
+      binary: "C:/Users/maxba/Documents/C++_Stuff/C++ OpenCV/ForFun/build/CMakeFiles/CMakeScratch/TryCompile-rhyhma"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
@@ -134,39 +156,50 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/maxba/Documents/C++_Stuff/C++ OpenCV/ForFun/build/CMakeFiles/CMakeScratch/TryCompile-26zlpd'
+        Change Dir: 'C:/Users/maxba/Documents/C++_Stuff/C++ OpenCV/ForFun/build/CMakeFiles/CMakeScratch/TryCompile-rhyhma'
         
-        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/MSBuild/Current/Bin/MSBuild.exe" cmTC_1c8d4.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/MSBuild/Current/Bin/MSBuild.exe" cmTC_95e75.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
         Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
         Copyright (C) Microsoft Corporation. All rights reserved.
         
-        Build started 10/10/2024 5:05:44 PM.
-        Project "C:\\Users\\maxba\\Documents\\C++_Stuff\\C++ OpenCV\\ForFun\\build\\CMakeFiles\\CMakeScratch\\TryCompile-26zlpd\\cmTC_1c8d4.vcxproj" on node 1 (default targets).
+        Build started 11/3/2024 1:33:23 AM.
+        Project "C:\\Users\\maxba\\Documents\\C++_Stuff\\C++ OpenCV\\ForFun\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rhyhma\\cmTC_95e75.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_1c8d4.dir\\Debug\\".
-          Creating directory "C:\\Users\\maxba\\Documents\\C++_Stuff\\C++ OpenCV\\ForFun\\build\\CMakeFiles\\CMakeScratch\\TryCompile-26zlpd\\Debug\\".
-          Creating directory "cmTC_1c8d4.dir\\Debug\\cmTC_1c8d4.tlog\\".
+          Creating directory "cmTC_95e75.dir\\Debug\\".
+          Creating directory "C:\\Users\\maxba\\Documents\\C++_Stuff\\C++ OpenCV\\ForFun\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rhyhma\\Debug\\".
+          Creating directory "cmTC_95e75.dir\\Debug\\cmTC_95e75.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_1c8d4.dir\\Debug\\cmTC_1c8d4.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Creating "cmTC_95e75.dir\\Debug\\cmTC_95e75.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Debug"
+        VcpkgCheckManifestRoot:
+          The vcpkg manifest was disabled, but we found a manifest file in C:\\Users\\maxba\\Documents\\C++_Stuff\\C++ OpenCV\\ForFun\\. You may want to enable vcpkg manifests in your properties page or pass /p:VcpkgEnableManifest=true to the msbuild invocation.
         ClCompile:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_1c8d4.dir\\Debug\\\\" /Fd"cmTC_1c8d4.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCCompilerABI.c"
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_95e75.dir\\Debug\\\\" /Fd"cmTC_95e75.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCCompilerABI.c"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30148 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
           CMakeCCompilerABI.c
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_1c8d4.dir\\Debug\\\\" /Fd"cmTC_1c8d4.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCCompilerABI.c"
+          cl /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_95e75.dir\\Debug\\\\" /Fd"cmTC_95e75.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCCompilerABI.c"
         Link:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\maxba\\Documents\\C++_Stuff\\C++ OpenCV\\ForFun\\build\\CMakeFiles\\CMakeScratch\\TryCompile-26zlpd\\Debug\\cmTC_1c8d4.exe" /INCREMENTAL /ILK:"cmTC_1c8d4.dir\\Debug\\cmTC_1c8d4.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/maxba/Documents/C++_Stuff/C++ OpenCV/ForFun/build/CMakeFiles/CMakeScratch/TryCompile-26zlpd/Debug/cmTC_1c8d4.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/maxba/Documents/C++_Stuff/C++ OpenCV/ForFun/build/CMakeFiles/CMakeScratch/TryCompile-26zlpd/Debug/cmTC_1c8d4.lib" /MACHINE:X64  /machine:x64 cmTC_1c8d4.dir\\Debug\\CMakeCCompilerABI.obj
-          cmTC_1c8d4.vcxproj -> C:\\Users\\maxba\\Documents\\C++_Stuff\\C++ OpenCV\\ForFun\\build\\CMakeFiles\\CMakeScratch\\TryCompile-26zlpd\\Debug\\cmTC_1c8d4.exe
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\maxba\\Documents\\C++_Stuff\\C++ OpenCV\\ForFun\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rhyhma\\Debug\\cmTC_95e75.exe" /INCREMENTAL /ILK:"cmTC_95e75.dir\\Debug\\cmTC_95e75.ilk" /NOLOGO /LIBPATH:"C:\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/maxba/Documents/C++_Stuff/C++ OpenCV/ForFun/build/CMakeFiles/CMakeScratch/TryCompile-rhyhma/Debug/cmTC_95e75.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/maxba/Documents/C++_Stuff/C++ OpenCV/ForFun/build/CMakeFiles/CMakeScratch/TryCompile-rhyhma/Debug/cmTC_95e75.lib" /MACHINE:X64  /machine:x64 cmTC_95e75.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_95e75.vcxproj -> C:\\Users\\maxba\\Documents\\C++_Stuff\\C++ OpenCV\\ForFun\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rhyhma\\Debug\\cmTC_95e75.exe
+        AppLocalFromInstalled:
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\maxba\\Documents\\C++_Stuff\\C++ OpenCV\\ForFun\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rhyhma\\Debug\\cmTC_95e75.exe" "C:\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_95e75.dir\\Debug\\cmTC_95e75.tlog\\cmTC_95e75.write.1u.tlog" "cmTC_95e75.dir\\Debug\\vcpkg.applocal.log"
+          'pwsh.exe' is not recognized as an internal or external command,
+          operable program or batch file.
+          The command "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\maxba\\Documents\\C++_Stuff\\C++ OpenCV\\ForFun\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rhyhma\\Debug\\cmTC_95e75.exe" "C:\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_95e75.dir\\Debug\\cmTC_95e75.tlog\\cmTC_95e75.write.1u.tlog" "cmTC_95e75.dir\\Debug\\vcpkg.applocal.log"" exited with code 9009.
+          "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\maxba\\Documents\\C++_Stuff\\C++ OpenCV\\ForFun\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rhyhma\\Debug\\cmTC_95e75.exe" "C:\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_95e75.dir\\Debug\\cmTC_95e75.tlog\\cmTC_95e75.write.1u.tlog" "cmTC_95e75.dir\\Debug\\vcpkg.applocal.log"
         FinalizeBuildStatus:
-          Deleting file "cmTC_1c8d4.dir\\Debug\\cmTC_1c8d4.tlog\\unsuccessfulbuild".
-          Touching "cmTC_1c8d4.dir\\Debug\\cmTC_1c8d4.tlog\\cmTC_1c8d4.lastbuildstate".
-        Done Building Project "C:\\Users\\maxba\\Documents\\C++_Stuff\\C++ OpenCV\\ForFun\\build\\CMakeFiles\\CMakeScratch\\TryCompile-26zlpd\\cmTC_1c8d4.vcxproj" (default targets).
+          Deleting file "cmTC_95e75.dir\\Debug\\cmTC_95e75.tlog\\unsuccessfulbuild".
+          Touching "cmTC_95e75.dir\\Debug\\cmTC_95e75.tlog\\cmTC_95e75.lastbuildstate".
+        Done Building Project "C:\\Users\\maxba\\Documents\\C++_Stuff\\C++ OpenCV\\ForFun\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rhyhma\\cmTC_95e75.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.79
+        Time Elapsed 00:00:02.24
         
       exitCode: 0
   -
@@ -206,8 +239,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/maxba/Documents/C++_Stuff/C++ OpenCV/ForFun/build/CMakeFiles/CMakeScratch/TryCompile-ra4fhe"
-      binary: "C:/Users/maxba/Documents/C++_Stuff/C++ OpenCV/ForFun/build/CMakeFiles/CMakeScratch/TryCompile-ra4fhe"
+      source: "C:/Users/maxba/Documents/C++_Stuff/C++ OpenCV/ForFun/build/CMakeFiles/CMakeScratch/TryCompile-ueswry"
+      binary: "C:/Users/maxba/Documents/C++_Stuff/C++ OpenCV/ForFun/build/CMakeFiles/CMakeScratch/TryCompile-ueswry"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
       CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
@@ -216,39 +249,50 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/maxba/Documents/C++_Stuff/C++ OpenCV/ForFun/build/CMakeFiles/CMakeScratch/TryCompile-ra4fhe'
+        Change Dir: 'C:/Users/maxba/Documents/C++_Stuff/C++ OpenCV/ForFun/build/CMakeFiles/CMakeScratch/TryCompile-ueswry'
         
-        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/MSBuild/Current/Bin/MSBuild.exe" cmTC_14c47.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/MSBuild/Current/Bin/MSBuild.exe" cmTC_4038f.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
         Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
         Copyright (C) Microsoft Corporation. All rights reserved.
         
-        Build started 10/10/2024 5:05:45 PM.
-        Project "C:\\Users\\maxba\\Documents\\C++_Stuff\\C++ OpenCV\\ForFun\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ra4fhe\\cmTC_14c47.vcxproj" on node 1 (default targets).
+        Build started 11/3/2024 1:33:26 AM.
+        Project "C:\\Users\\maxba\\Documents\\C++_Stuff\\C++ OpenCV\\ForFun\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ueswry\\cmTC_4038f.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_14c47.dir\\Debug\\".
-          Creating directory "C:\\Users\\maxba\\Documents\\C++_Stuff\\C++ OpenCV\\ForFun\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ra4fhe\\Debug\\".
-          Creating directory "cmTC_14c47.dir\\Debug\\cmTC_14c47.tlog\\".
+          Creating directory "cmTC_4038f.dir\\Debug\\".
+          Creating directory "C:\\Users\\maxba\\Documents\\C++_Stuff\\C++ OpenCV\\ForFun\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ueswry\\Debug\\".
+          Creating directory "cmTC_4038f.dir\\Debug\\cmTC_4038f.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_14c47.dir\\Debug\\cmTC_14c47.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Creating "cmTC_4038f.dir\\Debug\\cmTC_4038f.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Debug"
+        VcpkgCheckManifestRoot:
+          The vcpkg manifest was disabled, but we found a manifest file in C:\\Users\\maxba\\Documents\\C++_Stuff\\C++ OpenCV\\ForFun\\. You may want to enable vcpkg manifests in your properties page or pass /p:VcpkgEnableManifest=true to the msbuild invocation.
         ClCompile:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_14c47.dir\\Debug\\\\" /Fd"cmTC_14c47.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCXXCompilerABI.cpp"
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_4038f.dir\\Debug\\\\" /Fd"cmTC_4038f.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCXXCompilerABI.cpp"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30148 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
           CMakeCXXCompilerABI.cpp
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_14c47.dir\\Debug\\\\" /Fd"cmTC_14c47.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_4038f.dir\\Debug\\\\" /Fd"cmTC_4038f.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCXXCompilerABI.cpp"
         Link:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\maxba\\Documents\\C++_Stuff\\C++ OpenCV\\ForFun\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ra4fhe\\Debug\\cmTC_14c47.exe" /INCREMENTAL /ILK:"cmTC_14c47.dir\\Debug\\cmTC_14c47.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/maxba/Documents/C++_Stuff/C++ OpenCV/ForFun/build/CMakeFiles/CMakeScratch/TryCompile-ra4fhe/Debug/cmTC_14c47.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/maxba/Documents/C++_Stuff/C++ OpenCV/ForFun/build/CMakeFiles/CMakeScratch/TryCompile-ra4fhe/Debug/cmTC_14c47.lib" /MACHINE:X64  /machine:x64 cmTC_14c47.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_14c47.vcxproj -> C:\\Users\\maxba\\Documents\\C++_Stuff\\C++ OpenCV\\ForFun\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ra4fhe\\Debug\\cmTC_14c47.exe
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\maxba\\Documents\\C++_Stuff\\C++ OpenCV\\ForFun\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ueswry\\Debug\\cmTC_4038f.exe" /INCREMENTAL /ILK:"cmTC_4038f.dir\\Debug\\cmTC_4038f.ilk" /NOLOGO /LIBPATH:"C:\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/maxba/Documents/C++_Stuff/C++ OpenCV/ForFun/build/CMakeFiles/CMakeScratch/TryCompile-ueswry/Debug/cmTC_4038f.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/maxba/Documents/C++_Stuff/C++ OpenCV/ForFun/build/CMakeFiles/CMakeScratch/TryCompile-ueswry/Debug/cmTC_4038f.lib" /MACHINE:X64  /machine:x64 cmTC_4038f.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_4038f.vcxproj -> C:\\Users\\maxba\\Documents\\C++_Stuff\\C++ OpenCV\\ForFun\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ueswry\\Debug\\cmTC_4038f.exe
+        AppLocalFromInstalled:
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\maxba\\Documents\\C++_Stuff\\C++ OpenCV\\ForFun\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ueswry\\Debug\\cmTC_4038f.exe" "C:\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_4038f.dir\\Debug\\cmTC_4038f.tlog\\cmTC_4038f.write.1u.tlog" "cmTC_4038f.dir\\Debug\\vcpkg.applocal.log"
+          'pwsh.exe' is not recognized as an internal or external command,
+          operable program or batch file.
+          The command "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\maxba\\Documents\\C++_Stuff\\C++ OpenCV\\ForFun\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ueswry\\Debug\\cmTC_4038f.exe" "C:\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_4038f.dir\\Debug\\cmTC_4038f.tlog\\cmTC_4038f.write.1u.tlog" "cmTC_4038f.dir\\Debug\\vcpkg.applocal.log"" exited with code 9009.
+          "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\maxba\\Documents\\C++_Stuff\\C++ OpenCV\\ForFun\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ueswry\\Debug\\cmTC_4038f.exe" "C:\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_4038f.dir\\Debug\\cmTC_4038f.tlog\\cmTC_4038f.write.1u.tlog" "cmTC_4038f.dir\\Debug\\vcpkg.applocal.log"
         FinalizeBuildStatus:
-          Deleting file "cmTC_14c47.dir\\Debug\\cmTC_14c47.tlog\\unsuccessfulbuild".
-          Touching "cmTC_14c47.dir\\Debug\\cmTC_14c47.tlog\\cmTC_14c47.lastbuildstate".
-        Done Building Project "C:\\Users\\maxba\\Documents\\C++_Stuff\\C++ OpenCV\\ForFun\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ra4fhe\\cmTC_14c47.vcxproj" (default targets).
+          Deleting file "cmTC_4038f.dir\\Debug\\cmTC_4038f.tlog\\unsuccessfulbuild".
+          Touching "cmTC_4038f.dir\\Debug\\cmTC_4038f.tlog\\cmTC_4038f.lastbuildstate".
+        Done Building Project "C:\\Users\\maxba\\Documents\\C++_Stuff\\C++ OpenCV\\ForFun\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ueswry\\cmTC_4038f.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.79
+        Time Elapsed 00:00:02.32
         
       exitCode: 0
   -

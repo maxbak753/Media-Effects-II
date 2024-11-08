@@ -1,0 +1,15 @@
+project(AudioDCT)
+
+set(CMAKE_CXX_STANDARD 17)
+
+set(FFTW3_DIR "C:/vcpkg/installed/x64-windows/share/fftw3")
+set(SndFile_DIR "C:/vcpkg/installed/x64-windows/share/SndFile") 
+
+# Find FFTW3 and Libsndfile
+find_package(FFTW3 REQUIRED)
+find_package(SndFile REQUIRED)
+
+add_executable(AudioDCT main.cpp)
+
+# Link libraries
+target_link_libraries(AudioDCT FFTW3::fftw3f sndfile)

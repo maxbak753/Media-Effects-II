@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\maxba\Documents\C++_Stuff\From_Matlab\Audio_Transform_Reconstructor\audio_reconstructor_dct\build\CMakeFiles\5f99f0a52fd1233cff36783676922c9e\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{F0EA4701-2E6D-3271-9655-7BAA45B597C0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,3 @@
+C:/Users/maxba/Documents/C++_Stuff/From_Matlab/Audio_Transform_Reconstructor/audio_reconstructor_dct/build/CMakeFiles/ar_dct.dir
+C:/Users/maxba/Documents/C++_Stuff/From_Matlab/Audio_Transform_Reconstructor/audio_reconstructor_dct/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/maxba/Documents/C++_Stuff/From_Matlab/Audio_Transform_Reconstructor/audio_reconstructor_dct/build/CMakeFiles/ZERO_CHECK.dir

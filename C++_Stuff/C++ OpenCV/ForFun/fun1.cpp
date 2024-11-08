@@ -6,6 +6,7 @@
 #include <filesystem>           // print working directory
 #include <cmath>                // pow() exponents
 #include <chrono>               // elapsed time
+// #include <matplot/matplot.h>    // MatPlot++
 
 // #ifndef M_PI
 // #define M_PI 3.14159265358979323846
@@ -58,7 +59,7 @@ int main(int argc, char** argv ) {
     double sigma_x = k_size * 0.3, sigma_y = k_size * 0.3; // sigma is the sqrt{variance} for each respective direction
     bool conv_valid = true;
     bool option_valid = true;
-    int secs_timeout = 30; // seconds after which the webcam window closes
+    int secs_timeout = 120; // seconds after which the webcam window closes
     switch (filter_type) {
         case 1: // Box Blur
             cout << "Box Blur" << endl;

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\maxba\Documents\C++_Stuff\From_Matlab\Audio_Transform_Reconstructor\audio_reconstructor_dct\ar_dct.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\maxba\Documents\C++_Stuff\From_Matlab\Audio_Transform_Reconstructor\audio_reconstructor_dct\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{0DC8B711-4BF9-327C-BBFD-D8CEF2E6FA0F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
