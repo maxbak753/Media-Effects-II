@@ -18,31 +18,32 @@ using namespace std;
 
 // Functions
 
-// // Classes
-// class particle {
-//   public:
-//     float ax = 0.0; // acceleration (gravity) in x-direction
-//     float ay = 0.3; // acceleration (gravity) in y-direction
-//     float tx = 0; // time for x-gravity
-//     float ty = 0; // time for y-gravity
-//     bool position_invalid; // true if the position is invalid (out-of-bounds)
-//     float bounce_loss = 0.9; // bounce loss (% of velocity to keep after bounce)
-//     float air_res = 0.9999; // air resistance (% of velocity kept throughout time)
-//     float fric = 0.99; // friction (% of velocity kept while touching the walls)
-//     float dp[2]; // Δp = change in position
+// Classes
+class Particle {
+  public:
+    float ax = 0.0; // acceleration (gravity) in x-direction
+    float ay = 0.3; // acceleration (gravity) in y-direction
+    float tx = 0; // time for x-gravity
+    float ty = 0; // time for y-gravity
+    bool position_invalid; // true if the position is invalid (out-of-bounds)
+    float bounce_loss = 0.9; // bounce loss (% of velocity to keep after bounce)
+    float air_res = 0.9999; // air resistance (% of velocity kept throughout time)
+    float fric = 0.99; // friction (% of velocity kept while touching the walls)
+    float dp[2]; // Δp = change in position
+    float position[2];
 
-//     particle(string choice) {
-//         if (choice == "frictionless") {
-//             bounce_loss = 0;
-//             air_res = 0;
-//             fric = 0;
-//         }
-//     }
-//     particle(float gx, float gy) {
-//         ax = gx;
-//         ay = gy;
-//     }
-// };
+    Particle(string choice) {
+        if (choice == "frictionless") {
+            bounce_loss = 0;
+            air_res = 0;
+            fric = 0;
+        }
+    }
+    Particle(float gx, float gy) {
+        ax = gx;
+        ay = gy;
+    }
+};
 
 // Main
 int main(int argc, char** argv ) {
@@ -58,21 +59,23 @@ int main(int argc, char** argv ) {
     // Display the matrix
     // std::cout << "Matrix filled with zeros:\n" << field << std::endl;
 
-    float position[2] = {static_cast<float>(dims[0]/2), static_cast<float>(dims[1]/2)};
+    float pos[2] = {static_cast<float>(dims[0]/2), static_cast<float>(dims[1]/2)};
     float proposed_position[2] = {0,0};
-    float direction[2] = {3,1};
+    float direction[2] = {1,1};
     int disp_count = 0;
     // bool proposed_position_invalid;
 
+    float v_scale = 1; // scale velocity (spped-up / slow-down)
     int v_i = static_cast<int>(max(direction[0], direction[1])); // direction interval for a whole number as smallest x-y component
     float v[2] = {direction[0] / v_i, direction[1] / v_i}; // normalized velocity vector where the largest interval component is 1 unit
-    float v_scale = 5;
-    v[0] *= v_scale; v[1] *= v_scale; // scale velocity (spped-up / slow-down)
+    
+    
 
     // imshow("Particle Simulation", field);
     cv::namedWindow("Particle Simulation", cv::WINDOW_NORMAL);
     cv::resizeWindow("Particle Simulation", 6*dims[1], 6*dims[0]);
-    int display_interval = 7; // after how many iterations does a new frame of the simulation appear
+    int display_interval = 10; // after how many iterations does a new frame of the simulation appear
+    float speed = display_interval;
 
 
     int secs_timeout = 60; // seconds after which the window closes
@@ -81,69 +84,81 @@ int main(int argc, char** argv ) {
 
     
 
-    float ax = 0.000; // acceleration (gravity) in x-direction
-    float ay = 0.003; // acceleration (gravity) in y-direction
-    float tx = 0;
-    float ty = 0;
-    bool position_invalid;
+    float ax = 0.000 / speed; // acceleration (gravity) in x-direction
+    float ay = 0.004 / speed; // acceleration (gravity) in y-direction
+    // float tx = 0;
+    // float ty = 0;
+    // bool position_invalid;
     int pos_inv_count = 0;
 
-    float bounce_loss = 0.9; // bounce loss (% of velocity to keep after bounce)
-    float air_res = 0.9999; // air resistance (% of velocity kept throughout time)
-    float fric = 0.99; // friction (% of velocity kept while touching the walls)
+    // float bounce_loss = 0.9; // bounce loss (% of velocity to keep after bounce)
+    // float air_res = 0.9999; // air resistance (% of velocity kept throughout time)
+    // float fric = 0.99; // friction (% of velocity kept while touching the walls)
 
-    float dp[2];
+    Particle p(ax, ay);
+    p.position[0] = pos[0]; p.position[1] = pos[1];
+    p.air_res = pow(p.air_res, 1.0/speed);
+    // p.bounce_loss = pow(p.bounce_loss, 1.0/speed);
+    p.fric = pow(p.fric, 1.0/speed);
+    // p.air_res += ((1-p.air_res) / v_scale) * (v_scale - 1);
+    // p.bounce_loss += ((1-p.bounce_loss) / v_scale) * (v_scale - 1);
+    // p.fric += ((1-p.fric) / v_scale) * (v_scale - 1);
 
-    int iw = 0;
+    bool bound_flag[2];
+
+    // float dp[2];
+
+    // int iw = 0;
 
     // wall_collisions(direction, velocity, secs_timeout)
 
     while (true) {
-        iw += 1;
+        // iw += 1;
         // field.at<uchar>(position[0], position[1]) = 0; // clear old position brightness
         // fade brightness
         field *= 0.9;
 
         // calculate new proposed position
-        dp[0] = v[0] + (ay*ty); dp[1] = v[1] + (ax*tx);
-        proposed_position[0] = position[0] + dp[0];
-        proposed_position[1] = position[1] + dp[1];
+        p.dp[0] = v[0] + (p.ay*p.ty); p.dp[1] = v[1] + (p.ax*p.tx);
+        proposed_position[0] = p.position[0] + p.dp[0];
+        proposed_position[1] = p.position[1] + p.dp[1];
 
         // If it will be out of bounds, reverse the direction (bounce)
-        position_invalid = 1;
-        while (position_invalid) {
-            bool bound_flag[2] = {((proposed_position[0] < 0) || (proposed_position[0] >= dims[0])), ((proposed_position[1] < 0) || (proposed_position[1] >= dims[1]))};
+        p.position_invalid = 1;
+        while (p.position_invalid) {
+            bound_flag[0] = ((proposed_position[0] < 0) || (proposed_position[0] >= dims[0])); 
+            bound_flag[1] = ((proposed_position[1] < 0) || (proposed_position[1] >= dims[1]));
             pos_inv_count += 1;
 
             if (bound_flag[0] && bound_flag[1]) {
-                tx = 0; ty = 0; // reset time for gravity (x & y)
-                v[0] *= -bounce_loss; v[1] *= -bounce_loss;
+                p.tx = 0; p.ty = 0; // reset time for gravity (x & y)
+                v[0] *= -p.bounce_loss; v[1] *= -p.bounce_loss;
             }
             else if (bound_flag[0]) {
-                ty = 0;
-                v[0] *= -bounce_loss;
+                p.ty = 0;
+                v[0] *= -p.bounce_loss;
             }
             else if (bound_flag[1]) {
-                tx = 0;
-                v[1] *= -bounce_loss;
+                p.tx = 0;
+                v[1] *= -p.bounce_loss;
             }
             else {
-                position_invalid = 0;
+                p.position_invalid = 0;
                 pos_inv_count = 0;
-                tx += 1;
-                ty += 1;
+                p.tx += 1;
+                p.ty += 1;
                 break;
             }
 
             // calculate new proposed position
-            dp[0] = v[0] + (ay*ty); dp[1] = v[1] + (ax*tx);
-            proposed_position[0] = position[0] + dp[0];
-            proposed_position[1] = position[1] + dp[1];
+            p.dp[0] = v[0] + (p.ay*p.ty); p.dp[1] = v[1] + (p.ax*p.tx);
+            proposed_position[0] = p.position[0] + p.dp[0];
+            proposed_position[1] = p.position[1] + p.dp[1];
         }
         
-        position[0] = proposed_position[0]; position[1] = proposed_position[1];
+        p.position[0] = proposed_position[0]; p.position[1] = proposed_position[1];
 
-        field.at<uchar>(std::floor(position[0]), std::floor(position[1])) = 255; // make new position bright (floor for sitting on bottom)
+        field.at<uchar>(std::floor(p.position[0]), std::floor(p.position[1])) = 255; // make new position bright (floor for sitting on bottom)
 
         if (disp_count >= display_interval) {
             cv::imshow("Particle Simulation", field);
@@ -170,10 +185,10 @@ int main(int argc, char** argv ) {
         }
         disp_count += 1;
 
-        v[0] *= air_res; v[1] *= air_res; // apply air resistance
+        v[0] *= p.air_res; v[1] *= p.air_res; // apply air resistance
 
-        if ((round(position[0]) == 0) || (round(position[0]) == dims[0]) || (round(position[1]) == 0) || (round(position[1]) == dims[1])) {
-            v[0] *= fric; v[1] *= fric; // friction
+        if ((round(p.position[0]) == 0) || (round(p.position[0]) == dims[0]) || (round(p.position[1]) == 0) || (round(p.position[1]) == dims[1])) {
+            v[0] *= p.fric; v[1] *= p.fric; // friction
         }
 
     }
