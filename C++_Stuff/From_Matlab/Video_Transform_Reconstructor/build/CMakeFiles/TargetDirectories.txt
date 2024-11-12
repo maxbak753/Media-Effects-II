@@ -1,0 +1,3 @@
+C:/Users/maxba/Documents/C++_Stuff/From_Matlab/Video_Transform_Reconstructor/build/CMakeFiles/Video_DCT.dir
+C:/Users/maxba/Documents/C++_Stuff/From_Matlab/Video_Transform_Reconstructor/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/maxba/Documents/C++_Stuff/From_Matlab/Video_Transform_Reconstructor/build/CMakeFiles/ZERO_CHECK.dir
