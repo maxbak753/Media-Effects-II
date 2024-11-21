@@ -1,0 +1,11 @@
+{Everything is in cmd terminal}
+
+How to send a file from a remote computer to the raspberry pi via SCP (Secure Copy Protocol):
+
+Template:
+scp [source file] [pi username]@[pi IP address]:[remote path]
+Example:
+scp "C:/path/file.txt" maxbak753@maxrpi:/home/maxbak753/Desktop
+
+This can fix errors if remote host identification has changed:
+ssh-keygen -R [pi IP address]
